@@ -8,12 +8,6 @@ namespace WebApplication1.Controllers;
 [Route("api/[controller]")]
 public class ReservationsController(ReservationRepository service) : ControllerBase
 {
-    [HttpGet]
-    public IActionResult Get()
-    {
-        return Ok(service.GetAll());
-    }
-
     [HttpGet("{id}")]
     public IActionResult GetById(int id)
     {

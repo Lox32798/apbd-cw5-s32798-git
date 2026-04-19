@@ -8,5 +8,5 @@ public class Room
     public int Floor { get; set; }
     public int Capacity { get; set; }
     public bool HasProjector { get; set; }
-    public bool IsAlive { get; set; }
+    public bool IsActive { get; set; }
 }
